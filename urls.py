@@ -5,6 +5,6 @@ urls.py
 from collection import views
 
 urlpatterns = [
-    url(r'^$', views.index, name='home'),
+    url(r'^$', views.index, name='Form'),
     # new url definition
-    url(r'^contact/$', views.contact, name='contact')
+    url(r'^list/$', views.contact, name='Post Lists')
