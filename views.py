@@ -17,3 +17,6 @@ def contact(request):
     return render_to_response('contact.html', {
         'form': form,
     })
+def index(request):
+    form = ContactForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
